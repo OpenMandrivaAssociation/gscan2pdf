@@ -35,7 +35,7 @@ footprint for multipage files).
 %setup -q
 
 %build
-perl Makefile.PL
+perl Makefile.PL INSTALLDIRS=vendor
 perl -pi -e 's|usr/local|usr||g' Makefile
 make
 										
@@ -89,6 +89,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%name
 %{_datadir}/%name
 %{_datadir}/applications/*
+%{perl_vendorlib}/*
 %{_mandir}/man1/*
 %{_menudir}/%name
 %{_liconsdir}/%name.png
