@@ -1,5 +1,5 @@
 %define name	gscan2pdf
-%define version	0.9.15
+%define version	0.9.16
 %define release %mkrel 1
 
 Name: 	 	%{name}
@@ -13,7 +13,7 @@ License:	GPL
 Group:		Publishing
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
-BuildRequires:	ImageMagick
+BuildRequires:	ImageMagick desktop-file-utils
 Requires:	perl-Gtk2 perl-Locale-gettext perl-PDF-API2
 Requires:	libtiff-progs ImageMagick
 Requires:	perl-Image-Magick
@@ -42,27 +42,11 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
-rm %buildroot/%_datadir/applications/%name.desktop
 
-#menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="GScan2PDF" longtitle="Scan and create PDFs" section="Office/Publishing" xdg="true"
-EOF
-
-mkdir -p %{buildroot}%{_datadir}/applications
-cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
-[Desktop Entry]
-Encoding=UTF-8
-Name=GScan2PDF
-Comment=Scan and create PDFs
-Exec=%{_bindir}/%{name}
-Icon=%{name}
-Terminal=false
-Type=Application
-StartupNotify=true
-Categories=GTK;Graphics;Scanning;X-MandrivaLinux-Office-Publishing;
-EOF
+desktop-file-install --vendor='' \
+	--dir=%buildroot%_datadir/applications \
+	--remove-category='Application' \
+	%buildroot%_datadir/applications/*.desktop
 
 #icons
 mkdir -p $RPM_BUILD_ROOT/%_liconsdir
@@ -91,7 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/*
 %{perl_vendorlib}/*
 %{_mandir}/man1/*
-%{_menudir}/%name
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
