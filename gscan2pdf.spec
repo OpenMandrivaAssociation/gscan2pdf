@@ -1,5 +1,5 @@
 %define name	gscan2pdf
-%define version	0.9.16
+%define version	0.9.17
 %define release %mkrel 1
 
 Name: 	 	%{name}
@@ -7,9 +7,9 @@ Summary: 	Producies multipage PDFs from a scan
 Version: 	%{version}
 Release: 	%{release}
 
-Source:		%{name}-%{version}.tar.bz2
+Source:		http://jaist.dl.sourceforge.net/sourceforge/%name/%name-%version.tar.gz
 URL:		http://gscan2pdf.sourceforge.net/
-License:	GPL
+License:	GPLv3
 Group:		Publishing
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
