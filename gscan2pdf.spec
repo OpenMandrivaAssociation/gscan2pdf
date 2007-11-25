@@ -1,5 +1,5 @@
 %define name	gscan2pdf
-%define version	0.9.18
+%define version	0.9.19
 %define release %mkrel 1
 
 Name: 	 	%{name}
