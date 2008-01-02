@@ -11,6 +11,7 @@ Source:		http://jaist.dl.sourceforge.net/sourceforge/%name/%name-%version.tar.gz
 URL:		http://gscan2pdf.sourceforge.net/
 License:	GPLv3
 Group:		Publishing
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 BuildRequires:	ImageMagick desktop-file-utils
 Requires:	perl-Gtk2 perl-Locale-gettext perl-PDF-API2
