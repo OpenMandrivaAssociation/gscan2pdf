@@ -1,5 +1,5 @@
 %define name	gscan2pdf
-%define version	0.9.19
+%define version	0.9.20
 %define release %mkrel 1
 
 Name: 	 	%{name}
@@ -50,11 +50,11 @@ desktop-file-install --vendor='' \
 
 #icons
 mkdir -p $RPM_BUILD_ROOT/%_liconsdir
-convert -size 48x48 %name.png $RPM_BUILD_ROOT/%_liconsdir/%name.png
+convert -size 48x48 %name.svg $RPM_BUILD_ROOT/%_liconsdir/%name.png
 mkdir -p $RPM_BUILD_ROOT/%_iconsdir
-convert -size 32x32 %name.png $RPM_BUILD_ROOT/%_iconsdir/%name.png
+convert -size 32x32 %name.svg $RPM_BUILD_ROOT/%_iconsdir/%name.png
 mkdir -p $RPM_BUILD_ROOT/%_miconsdir
-convert -size 16x16 %name.png $RPM_BUILD_ROOT/%_miconsdir/%name.png
+convert -size 16x16 %name.svg $RPM_BUILD_ROOT/%_miconsdir/%name.png
 
 %find_lang %name
 
