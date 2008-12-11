@@ -13,9 +13,9 @@ License:	GPLv3
 Group:		Publishing
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
-BuildRequires:	ImageMagick desktop-file-utils
+BuildRequires:	imagemagick desktop-file-utils
 Requires:	perl-Gtk2 perl-Locale-gettext perl-PDF-API2
-Requires:	libtiff-progs ImageMagick
+Requires:	libtiff-progs imagemagick
 Requires:	perl-Image-Magick
 Requires:	sane-frontends
 Requires:	perl-Gtk2-Ex-PodViewer
