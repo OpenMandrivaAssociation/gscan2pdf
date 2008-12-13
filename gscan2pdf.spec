@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc History INSTALL
-%{_bindir}/%name
+%{_bindir}/*
 %{_datadir}/%name
 %{_datadir}/applications/*
 %{perl_vendorlib}/*
