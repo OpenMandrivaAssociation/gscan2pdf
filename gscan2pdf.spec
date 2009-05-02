@@ -82,3 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
+%{_datadir}/pixmaps/*.svg
