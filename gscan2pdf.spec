@@ -1,6 +1,6 @@
 %define name	gscan2pdf
 %define version	0.9.29
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 	 	%{name}
 Summary: 	Producies multipage PDFs from a scan
@@ -20,7 +20,7 @@ Requires:	perl-Image-Magick
 Requires:	sane-frontends
 Requires:	perl-Gtk2-Ex-PodViewer
 Requires:	perl-forks >= 0.33
-Requires:	per-reaper
+Requires:	perl-reaper
 Requires:	unpaper
 Requires:	xdg-utils
 Requires:	djvulibre
