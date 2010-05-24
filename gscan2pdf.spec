@@ -1,9 +1,9 @@
 %define name	gscan2pdf
 %define version	0.9.30
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 	 	%{name}
-Summary: 	Producies multipage PDFs from a scan
+Summary: 	Produces multipage PDFs from a scan
 Version: 	%{version}
 Release: 	%{release}
 
@@ -21,6 +21,7 @@ Requires:	sane-frontends
 Requires:	perl-Gtk2-Ex-PodViewer
 Requires:	perl-forks >= 0.33
 Requires:	perl-reaper
+Requires:	perl-Set-IntSpan
 Requires:	unpaper
 Requires:	xdg-utils
 Requires:	djvulibre
@@ -42,7 +43,7 @@ perl -pi -e 's|usr/local|usr||g' Makefile
 make
 										
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 desktop-file-install --vendor='' \
@@ -51,17 +52,17 @@ desktop-file-install --vendor='' \
 	%buildroot%_datadir/applications/*.desktop
 
 #icons
-mkdir -p $RPM_BUILD_ROOT/%_liconsdir
-convert -size 48x48 %name.svg $RPM_BUILD_ROOT/%_liconsdir/%name.png
-mkdir -p $RPM_BUILD_ROOT/%_iconsdir
-convert -size 32x32 %name.svg $RPM_BUILD_ROOT/%_iconsdir/%name.png
-mkdir -p $RPM_BUILD_ROOT/%_miconsdir
-convert -size 16x16 %name.svg $RPM_BUILD_ROOT/%_miconsdir/%name.png
+mkdir -p %{buildroot}/%_liconsdir
+convert -size 48x48 %name.svg %{buildroot}/%_liconsdir/%name.png
+mkdir -p %{buildroot}/%_iconsdir
+convert -size 32x32 %name.svg %{buildroot}/%_iconsdir/%name.png
+mkdir -p %{buildroot}/%_miconsdir
+convert -size 16x16 %name.svg %{buildroot}/%_miconsdir/%name.png
 
 %find_lang %name
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %if %mdkversion < 200900
 %post
