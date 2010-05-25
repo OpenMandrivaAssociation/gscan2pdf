@@ -1,6 +1,6 @@
 %define name	gscan2pdf
 %define version	0.9.30
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name: 	 	%{name}
 Summary: 	Produces multipage PDFs from a scan
@@ -53,11 +53,11 @@ desktop-file-install --vendor='' \
 
 #icons
 mkdir -p %{buildroot}/%_liconsdir
-convert -size 48x48 %name.svg %{buildroot}/%_liconsdir/%name.png
+convert -resize 48x48 %name.svg %{buildroot}/%_liconsdir/%name.png
 mkdir -p %{buildroot}/%_iconsdir
-convert -size 32x32 %name.svg %{buildroot}/%_iconsdir/%name.png
+convert -resize 32x32 %name.svg %{buildroot}/%_iconsdir/%name.png
 mkdir -p %{buildroot}/%_miconsdir
-convert -size 16x16 %name.svg %{buildroot}/%_miconsdir/%name.png
+convert -resize 16x16 %name.svg %{buildroot}/%_miconsdir/%name.png
 
 %find_lang %name
 
