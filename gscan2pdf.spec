@@ -1,5 +1,5 @@
 %define name	gscan2pdf
-%define version	1.0.0
+%define version	1.0.1
 %define release %mkrel 1
 
 Name:		%{name}
@@ -11,17 +11,16 @@ Source:		http://jaist.dl.sourceforge.net/sourceforge/%name/%name-%version.tar.gz
 URL:		http://gscan2pdf.sourceforge.net/
 License:	GPLv3
 Group:		Publishing
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 BuildRequires:	imagemagick desktop-file-utils
-Requires:	perl-Gtk2 perl-Locale-gettext perl-PDF-API2
+#Requires:	perl-Gtk2 perl-Locale-gettext perl-PDF-API2
 Requires:	libtiff-progs imagemagick
-Requires:	perl-Image-Magick
+#Requires:	perl-Image-Magick
 Requires:	sane-frontends
-Requires:	perl-Gtk2-Ex-PodViewer
-Requires:	perl-forks >= 0.33
-Requires:	perl-reaper
-Requires:	perl-Set-IntSpan
+#Requires:	perl-Gtk2-Ex-PodViewer
+#Requires:	perl-forks >= 0.33
+#Requires:	perl-reaper
+#Requires:	perl-Set-IntSpan
 Requires:	unpaper
 Requires:	xdg-utils
 Requires:	djvulibre
@@ -60,19 +59,6 @@ mkdir -p %{buildroot}%{_miconsdir}
 convert -resize 16x16 %{name}.svg %{buildroot}%{_miconsdir}/%{name}.png
 
 %find_lang %{name}
-
-%clean
-rm -rf %{buildroot}
-
-%if %mdkversion < 200900
-%post
-%update_menus
-%endif
-		
-%if %mdkversion < 200900
-%postun
-%clean_menus
-%endif
 
 %files -f %{name}.lang
 %defattr(-,root,root)
