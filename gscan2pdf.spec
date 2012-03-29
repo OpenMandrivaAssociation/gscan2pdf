@@ -1,5 +1,5 @@
 %define name	gscan2pdf
-%define version	1.0.1
+%define version	1.0.2
 %define release %mkrel 1
 
 Name:		%{name}
@@ -7,11 +7,12 @@ Summary:	Produces multipage PDFs from a scan
 Version:	%{version}
 Release:	%{release}
 
-Source:		http://jaist.dl.sourceforge.net/sourceforge/%name/%name-%version.tar.gz
+Source0:	http://downloads.sourceforge.net/project/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.gz
 URL:		http://gscan2pdf.sourceforge.net/
 License:	GPLv3
 Group:		Publishing
 BuildArch:	noarch
+BuildRequires:	imagemagick perl-devel
 BuildRequires:	imagemagick desktop-file-utils
 #Requires:	perl-Gtk2 perl-Locale-gettext perl-PDF-API2
 Requires:	libtiff-progs imagemagick
