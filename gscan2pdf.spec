@@ -1,5 +1,5 @@
 %define name	gscan2pdf
-%define version	1.0.2
+%define version	1.0.4
 %define release %mkrel 1
 
 Name:		%{name}
@@ -14,14 +14,8 @@ Group:		Publishing
 BuildArch:	noarch
 BuildRequires:	imagemagick perl-devel
 BuildRequires:	imagemagick desktop-file-utils
-#Requires:	perl-Gtk2 perl-Locale-gettext perl-PDF-API2
 Requires:	libtiff-progs imagemagick
-#Requires:	perl-Image-Magick
 Requires:	sane-frontends
-#Requires:	perl-Gtk2-Ex-PodViewer
-#Requires:	perl-forks >= 0.33
-#Requires:	perl-reaper
-#Requires:	perl-Set-IntSpan
 Requires:	unpaper
 Requires:	xdg-utils
 Requires:	djvulibre
