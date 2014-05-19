@@ -16,7 +16,7 @@ BuildRequires:	imagemagick perl-devel
 BuildRequires:	imagemagick desktop-file-utils
 Requires:	libtiff-progs imagemagick
 Requires:	sane-frontends
-Requires:	unpaper
+Requires:	unpaper >= 0.4.2
 Requires:	xdg-utils
 Requires:	djvulibre
 Requires:	gocr
