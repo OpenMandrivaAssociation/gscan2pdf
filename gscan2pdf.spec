@@ -20,6 +20,7 @@ Requires:	unpaper >= 0.4.2
 Requires:	xdg-utils
 Requires:	djvulibre
 Requires:	gocr
+Requires:	perl(PDF::API2) >= 2.21.0
 
 %description
 A GUI to ease the process of producing a multipage PDF from a scan.
