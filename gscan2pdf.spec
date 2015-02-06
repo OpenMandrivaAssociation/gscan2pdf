@@ -1,6 +1,6 @@
 %define name	gscan2pdf
 %define version	1.0.6
-%define release 2
+%define release 3
 
 Name:		%{name}
 Summary:	Produces multipage PDFs from a scan
