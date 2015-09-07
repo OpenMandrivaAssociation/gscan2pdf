@@ -1,7 +1,7 @@
 Name:		gscan2pdf
 Summary:	Produces multipage PDFs from a scan
 Version:	1.3.4
-Release:	1
+Release:	2
 
 Source0:	http://downloads.sourceforge.net/project/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.xz
 URL:		http://gscan2pdf.sourceforge.net/
@@ -16,7 +16,7 @@ Requires:	unpaper >= 0.4.2
 Requires:	xdg-utils
 Requires:	djvulibre
 Requires:	gocr
-Requires:	perl(PDF::API2) >= 2.21.0
+Requires:	perl(PDF::API2) >= 2.20.0
 
 %description
 A GUI to ease the process of producing a multipage PDF from a scan.
