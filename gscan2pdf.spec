@@ -43,11 +43,11 @@ desktop-file-install --vendor='' \
 
 #icons
 mkdir -p %{buildroot}/%{_liconsdir}
-convert -resize 48x48 %{name}.svg %{buildroot}%{_liconsdir}/%{name}.png
+convert -resize 48x48 icons/%{name}.svg %{buildroot}%{_liconsdir}/%{name}.png
 mkdir -p %{buildroot}%{_iconsdir}
-convert -resize 32x32 %{name}.svg %{buildroot}%{_iconsdir}/%{name}.png
+convert -resize 32x32 icons/%{name}.svg %{buildroot}%{_iconsdir}/%{name}.png
 mkdir -p %{buildroot}%{_miconsdir}
-convert -resize 16x16 %{name}.svg %{buildroot}%{_miconsdir}/%{name}.png
+convert -resize 16x16 icons/%{name}.svg %{buildroot}%{_miconsdir}/%{name}.png
 
 %find_lang %{name}
 
