@@ -1,13 +1,9 @@
-%define name	gscan2pdf
-%define version	1.0.6
-%define release 3
-
-Name:		%{name}
+Name:		gscan2pdf
 Summary:	Produces multipage PDFs from a scan
-Version:	%{version}
-Release:	%{release}
+Version:	1.3.4
+Release:	1
 
-Source0:	http://downloads.sourceforge.net/project/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/project/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.xz
 URL:		http://gscan2pdf.sourceforge.net/
 License:	GPLv3
 Group:		Publishing
