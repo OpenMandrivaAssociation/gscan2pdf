@@ -1,6 +1,6 @@
 Name:		gscan2pdf
 Summary:	Produces multipage PDFs from a scan
-Version:	1.4.0
+Version:	2.2.2
 Release:	1
 
 Source0:	http://downloads.sourceforge.net/project/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.xz
@@ -8,9 +8,12 @@ URL:		http://gscan2pdf.sourceforge.net/
 License:	GPLv3
 Group:		Publishing
 BuildArch:	noarch
-BuildRequires:	imagemagick perl-devel
-BuildRequires:	imagemagick desktop-file-utils
-Requires:	libtiff-progs imagemagick
+BuildRequires:	imagemagick 
+BuildRequires:	perl-devel
+BuildRequires:	imagemagick 
+BuildRequires:	desktop-file-utils
+Requires:	libtiff-progs 
+Requires:	imagemagick
 Requires:	sane-frontends
 Requires:	unpaper >= 0.4.2
 Requires:	xdg-utils
