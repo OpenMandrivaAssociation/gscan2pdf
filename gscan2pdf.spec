@@ -35,10 +35,10 @@ footprint for multipage files).
 %build
 perl Makefile.PL INSTALLDIRS=vendor
 perl -pi -e 's|usr/local|usr||g' Makefile
-make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 desktop-file-install --vendor='' \
 	--dir=%{buildroot}%{_datadir}/applications \
@@ -61,7 +61,8 @@ convert -resize 16x16 icons/%{name}.svg %{buildroot}%{_miconsdir}/%{name}.png
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_datadir}/applications/*
-#{_datadir}/appdata/*
+%{_datadir}/metainfo/gscan2pdf.appdata.xml
+%{_datadir}/help/C/gscan2pdf/documentation.html
 %{perl_vendorlib}/*
 %{_mandir}/man1/*
 %{_liconsdir}/%{name}.png
