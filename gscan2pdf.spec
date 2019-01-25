@@ -12,6 +12,7 @@ BuildRequires:	imagemagick
 BuildRequires:	perl-devel
 BuildRequires:	imagemagick 
 BuildRequires:	desktop-file-utils
+BuildRequires:	perl(Pod::Html)
 Requires:	libtiff-progs 
 Requires:	imagemagick
 Requires:	sane-frontends
