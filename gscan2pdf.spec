@@ -61,7 +61,7 @@ convert -resize 16x16 icons/%{name}.svg %{buildroot}%{_miconsdir}/%{name}.png
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_datadir}/applications/*
-%{_datadir}/appdata/*
+#{_datadir}/appdata/*
 %{perl_vendorlib}/*
 %{_mandir}/man1/*
 %{_liconsdir}/%{name}.png
