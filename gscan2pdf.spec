@@ -21,6 +21,12 @@ Requires:	xdg-utils
 Requires:	djvulibre
 Requires:	gocr
 Requires:	perl(PDF::API2) >= 2.20.0
+Requires:	perl-Gtk2-Ex-PodViewer
+Requires:	perl-Gtk3
+Requires:	perl(Readonly)
+Requires:	perl(Sane)
+Requires:	typelib(GooCanvas)
+
 
 %description
 A GUI to ease the process of producing a multipage PDF from a scan.
