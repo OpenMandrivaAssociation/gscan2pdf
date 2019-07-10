@@ -1,3 +1,6 @@
+# Gtk3::Entry is not provided by perl-Gtk3
+%global __requires_exclude %{?__requires_exclude:%{__requires_exclude}|}^perl\\(Gtk3::Entry\\)
+
 Name:		gscan2pdf
 Summary:	Produces multipage PDFs from a scan
 Version:	2.5.4
@@ -13,6 +16,11 @@ BuildRequires:	perl-devel
 BuildRequires:	imagemagick 
 BuildRequires:	desktop-file-utils
 BuildRequires:	perl(Pod::Html)
+BuildRequires:	perl(Gtk3::SimpleList)
+BuildRequires:	perl(GooCanvas2)
+BuildRequires:	perl-Gtk2-Ex-PodViewer
+BuildRequires:	perl-Gtk3
+BuildRequires:	perl(Sane)
 Requires:	libtiff-progs 
 Requires:	imagemagick
 Requires:	sane-frontends
