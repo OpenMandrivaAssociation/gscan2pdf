@@ -26,6 +26,7 @@ Requires:	perl-Gtk2-Ex-PodViewer
 Requires:	perl-Gtk3
 Requires:	perl(Readonly)
 Requires:	perl(Sane)
+Requires:	perl(Gtk3::SimpleList)
 Requires:	typelib(GooCanvas)
 
 
