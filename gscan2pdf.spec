@@ -21,6 +21,7 @@ Requires:	xdg-utils
 Requires:	djvulibre
 Requires:	gocr
 Requires:	perl(PDF::API2) >= 2.20.0
+Requires:	perl(GooCanvas2)
 Requires:	perl-Gtk2-Ex-PodViewer
 Requires:	perl-Gtk3
 Requires:	perl(Readonly)
