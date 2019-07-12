@@ -36,6 +36,7 @@ Requires:	perl(Readonly)
 Requires:	perl(Sane)
 Requires:	perl(Gtk3::SimpleList)
 Requires:	typelib(GooCanvas)
+Requires	perl(JSON::PP)
 
 
 %description
