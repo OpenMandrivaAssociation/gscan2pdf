@@ -8,6 +8,7 @@ URL:		http://gscan2pdf.sourceforge.net/
 License:	GPLv3
 Group:		Publishing
 BuildArch:	noarch
+# What needs changing here? 
 BuildRequires:	imagemagick perl-devel
 BuildRequires:	imagemagick desktop-file-utils
 Requires:	libtiff-progs imagemagick
