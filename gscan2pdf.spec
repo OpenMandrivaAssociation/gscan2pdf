@@ -1,6 +1,6 @@
 Name:		gscan2pdf
 Summary:	Produces multipage PDFs from a scan
-Version:	1.4.0
+Version:	2.5.5
 Release:	1
 
 Source0:	https://sourceforge.net/projects/gscan2pdf/files/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.xz
