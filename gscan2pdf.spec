@@ -19,17 +19,17 @@ Requires:	djvulibre
 Requires:	gocr
 Requires:	perl(PDF::API2) >= 2.20.0
 # Update Requires (Stop do you know if these should be BuildRequires or Requires? Are names correct for OM?) 
-Requires:       libgtk3-perl
-Requires:       libgtk3-simplelist-perl
-Requires:       liblocale-gettext-perl
-Requires:       libpdf-api2-perl
-Requires:       libsane
-Requires:       libimage-sane-perl
-Requires:       libset-intspan-perl
-Requires:       libtiff-tools
-Requires:       Imagemagick
-Requires:       perlmagick
-Requires:       sane-utils
+# Requires:       libgtk3-perl
+# Requires:       libgtk3-simplelist-perl
+# Requires:       liblocale-gettext-perl
+# Requires:       libpdf-api2-perl
+# Requires:       libsane
+# Requires:       libimage-sane-perl
+# Requires:       libset-intspan-perl
+# Requires:       libtiff-tools
+# Requires:       Imagemagick
+# Requires:       perlmagick
+# Requires:       sane-utils
 
 %description
 A GUI to ease the process of producing a multipage PDF from a scan.
