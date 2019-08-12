@@ -18,7 +18,7 @@ Requires:	xdg-utils
 Requires:	djvulibre
 Requires:	gocr
 Requires:	perl(PDF::API2) >= 2.20.0
-# Update Requires (Stop do you know if these should be BuildRequires or Requires? Are names correct for OM?) (2019-08-12 for v 2.5.5)
+# Update Requires (Stop do you know if these should be BuildRequires or Requires? Are names correct for OM?) 
 Requires:       libgtk3-perl
 Requires:       libgtk3-simplelist-perl
 Requires:       liblocale-gettext-perl
