@@ -3,7 +3,7 @@ Summary:	Produces multipage PDFs from a scan
 Version:	1.4.0
 Release:	1
 
-Source0:	http://downloads.sourceforge.net/project/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.xz
+Source0:	https://sourceforge.net/projects/gscan2pdf/files/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.xz
 URL:		http://gscan2pdf.sourceforge.net/
 License:	GPLv3
 Group:		Publishing
