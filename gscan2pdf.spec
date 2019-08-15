@@ -4,7 +4,7 @@
 Name:		gscan2pdf
 Summary:	Produces multipage PDFs from a scan
 Version:	2.5.5
-Release:	2
+Release:	3
 
 Source0:	http://downloads.sourceforge.net/project/gscan2pdf/%{name}/%{version}/%{name}-%{version}.tar.xz
 URL:		http://gscan2pdf.sourceforge.net/
@@ -52,8 +52,7 @@ footprint for multipage files).
 %build
 export CC=gcc
 export CXX=g++
-perl Makefile.PL INSTALLDIRS=vendor
-perl -pi -e 's|usr/local|usr||g' Makefile
+%__perl Makefile.PL INSTALLDIRS=vendor SHAREDIR=%{_datadir}
 %make_build
 
 %install
