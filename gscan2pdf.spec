@@ -9,6 +9,7 @@ License:	GPLv3
 Group:		Publishing
 BuildArch:	noarch
 # What needs changing here? 
+BuildRequires:	make
 BuildRequires:	imagemagick perl-devel
 BuildRequires:	imagemagick desktop-file-utils
 Requires:	libtiff-progs imagemagick
